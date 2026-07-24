@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ pageTitle or title }}{% if page.url != '/' %} - Krishna{% endif %}{% if page.url == '/' %}Krishna{% endif %}</title>
+<meta name="description" content="{{ description or title or 'Krishna' }}">
+<link rel="canonical" href="https://krishnapermi.net{{ page.url }}">
+<link rel="icon" type="image/png" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Krishna" href="/feed/index.xml">
+<link rel="stylesheet" href="/assets/style.css">
+<script>try{var t=localStorage.getItem('kp-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+  <header class="top">
+    <a href="/"><img class="avatar" src="/wp-content/uploads/2024/12/cropped-IMG_6148-scaled-1-180x180.jpg" alt=""></a>
+    <h1><a href="/">Krishna</a></h1>
+  </header>
+  <div class="layout">
+    <aside class="rail">
+      <div class="rail-inner">
+        <nav class="site">
+      <a href="/"{% if page.url == '/' %} class="here"{% endif %}>Home</a>
+      <a href="/category/apps/"{% if page.url == '/category/apps/' %} class="here"{% endif %}>Apps</a>
+      <a href="/category/workflows/"{% if page.url == '/category/workflows/' %} class="here"{% endif %}>Workflows</a>
+      <a href="/category/river/"{% if page.url == '/category/river/' %} class="here"{% endif %}>River</a>
+      <a href="/category/archive/"{% if page.url == '/category/archive/' %} class="here"{% endif %}>Archive</a>
+        </nav>
+        <div class="extras">
+          <a href="/akshar-indic-keyboard/">Akshar: Indic Keyboard</a>
+          <a href="https://mastodon.social/@krishna">Mastodon</a>
+          <a href="/feed/index.xml">RSS</a>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <div class="wrap">
+{{ content | safe }}
+        <footer class="site">&copy; Krishna &middot; krishnapermi.net
+          <div class="modes">
+            <button data-mode="auto">Auto</button>
+            <button data-mode="light">Light</button>
+            <button data-mode="dark">Dark</button>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </div>
+<script>
+(function(){
+  var KEY='kp-theme';
+  function apply(m){
+    if(m==='light'||m==='dark'){document.documentElement.setAttribute('data-theme',m);}
+    else{document.documentElement.removeAttribute('data-theme'); m='auto';}
+    document.querySelectorAll('.modes button').forEach(function(b){
+      b.classList.toggle('on', b.getAttribute('data-mode')===m);
+    });
+  }
+  var saved='auto';
+  try{saved=localStorage.getItem(KEY)||'auto';}catch(e){}
+  apply(saved);
+  document.querySelectorAll('.modes button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var m=b.getAttribute('data-mode');
+      try{localStorage.setItem(KEY,m);}catch(e){}
+      apply(m);
+    });
+  });
+})();
+</script>
+</body>
+</html>

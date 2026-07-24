@@ -1,0 +1,3 @@
+<ul class="index">
+{% for p in posts %}  <li><span class="t"><a href="{{ p.url }}">{{ p.data.title }}</a></span><time datetime="{{ p.date | isoDate }}">{{ p.date | niceDate }}</time></li>
+{% endfor %}</ul>

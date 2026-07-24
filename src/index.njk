@@ -1,0 +1,11 @@
+---
+layout: base.njk
+pageTitle: Krishna
+description: Krishna's notes on Apple, apps and workflows.
+---
+{% for p in collections.posts %}<article class="post">
+  <h2 class="post-title"><a href="{{ p.url }}">{{ p.data.title }}</a></h2>
+  <p class="byline"><time datetime="{{ p.date | isoDate }}">{{ p.date | niceDate }}</time>{% for c in p.data.categories %} &middot; <a href="/category/{{ c }}/">{{ c | catName }}</a>{% endfor %}</p>
+  <div class="content">{{ p.templateContent | safe }}</div>
+</article>
+{% endfor %}

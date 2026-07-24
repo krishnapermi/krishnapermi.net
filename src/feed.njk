@@ -1,0 +1,17 @@
+---
+permalink: /feed/index.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+  <title>Krishna</title>
+  <link>https://krishnapermi.net/</link>
+  <description>Krishna&#39;s blog</description>
+{% for p in collections.posts %}  <item>
+    <title>{{ p.data.title | escape }}</title>
+    <link>https://krishnapermi.net{{ p.url }}</link>
+    <guid isPermaLink="true">https://krishnapermi.net{{ p.url }}</guid>
+    <pubDate>{{ p.date | rfc822 }}</pubDate>
+    <description><![CDATA[{{ p.templateContent }}]]></description>
+  </item>
+{% endfor %}</channel></rss>

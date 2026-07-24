@@ -1,0 +1,52 @@
+media:
+  input: src/wp-content/uploads
+  output: /wp-content/uploads
+
+content:
+  - name: posts
+    label: Blog posts
+    type: collection
+    path: src/posts
+    filename: "{fields.title}.md"
+    view:
+      fields: [title, date, categories]
+      sort: [date]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        options:
+          time: true
+        required: true
+      - name: categories
+        label: Section
+        type: select
+        options:
+          multiple: true
+          values:
+            - value: apps
+              label: Apps
+            - value: workflows
+              label: Workflows
+            - value: river
+              label: River
+            - value: archive
+              label: Archive
+      - name: body
+        label: Post
+        type: rich-text
+  - name: akshar
+    label: Akshar page
+    type: file
+    path: src/akshar.njk
+    fields:
+      - name: body
+        label: Content
+        type: code

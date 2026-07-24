@@ -1,0 +1,8 @@
+---
+layout: base.njk
+---
+<article class="post">
+  <h1 class="post-title">{{ title }}</h1>
+  <p class="byline"><time datetime="{{ date | isoDate }}">{{ date | niceDate }}</time>{% for c in categories %} &middot; <a href="/category/{{ c }}/">{{ c | catName }}</a>{% endfor %}</p>
+  <div class="content endmark">{{ content | safe }}</div>
+</article>
