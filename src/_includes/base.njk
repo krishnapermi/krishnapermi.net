@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ pageTitle or title }}{% if page.url != '/' %} - Krishna{% endif %}{% if page.url == '/' %}Krishna{% endif %}</title>
+<title>{% if page.url == '/' %}Krishna{% else %}{{ pageTitle or title }} - Krishna{% endif %}</title>
 <meta name="description" content="{{ description or title or 'Krishna' }}">
 <link rel="canonical" href="https://krishnapermi.net{{ page.url }}">
 <link rel="icon" type="image/png" href="/assets/favicon-32.png">
