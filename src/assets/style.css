@@ -47,7 +47,9 @@ a:hover{text-decoration-color:var(--ink)}
 .top h1 a{color:var(--ink); text-decoration:none}
 
 /* layout: left rail + content */
-.layout{display:grid; grid-template-columns:220px minmax(0,1fr); gap:2.8rem; max-width:1040px; margin:0 auto; padding:0 1.5rem}
+.layout{display:grid; grid-template-columns:minmax(0,1fr) 220px; gap:2.8rem; max-width:1040px; margin:0 auto; padding:0 1.5rem}
+.layout main{order:1}
+.layout .rail{order:2}
 .rail{padding:1rem 0 2rem; background:transparent}
 .rail-inner{text-align:left}
 nav.site{display:flex; flex-direction:column; gap:.4rem; align-items:flex-start;
