@@ -85,9 +85,7 @@ h2.post-title a:hover{text-decoration-color:var(--ink)}
 .content code{background:var(--code); padding:.12em .4em; border-radius:4px; font-size:.85em;
   font-family:ui-monospace,"SF Mono",Menlo,monospace}
 .content pre{background:var(--code); padding:1rem; border-radius:8px; overflow-x:auto}
-.content hr{border:none; margin:2rem 0; text-align:left}
-.content hr::after{content:"★"; color:var(--soft); font-size:.8rem}
-.endmark::after{content:" ★"; color:var(--soft); font-size:.85rem}
+.content hr{border:none; border-top:1px solid var(--rule); margin:2rem auto; width:40%}
 
 /* archive lists */
 .page-head{margin:0 0 1.6rem; border-bottom:1px solid var(--rule); padding-bottom:.7rem}
