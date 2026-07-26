@@ -31,8 +31,6 @@ content:
         options:
           multiple: true
           values:
-            - value: workflows
-              label: Workflows
             - value: river
               label: River
             - value: archive

@@ -2,3 +2,5 @@
 /feed /feed/index.xml 200
 /category/apps/ /category/archive/ 301
 /category/apps /category/archive/ 301
+/category/workflows/ /category/archive/ 301
+/category/workflows /category/archive/ 301

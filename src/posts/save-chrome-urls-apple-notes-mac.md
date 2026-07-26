@@ -1,7 +1,7 @@
 ---
 title: "Save URLs from Google Chrome to Apple Notes on Mac with Automator and a simple keyboard shortcut"
 date: 2025-08-19T16:43:52+05:30
-categories: [workflows]
+categories: [archive]
 ---
 
 <p>I use the Notes app on my Mac more than my bookmark manager. I needed a system to capture links that I actually visit and act on.</p>

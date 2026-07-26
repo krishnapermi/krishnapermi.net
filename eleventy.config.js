@@ -20,7 +20,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("rfc822", (d) => new Date(d).toUTCString());
   eleventyConfig.addFilter("isoDate", (d) => new Date(d).toISOString());
   eleventyConfig.addFilter("catName", (slug) => {
-    const names = { workflows: "Workflows", river: "River", archive: "Archive" };
+    const names = { river: "River", archive: "Archive" };
     return names[slug] || slug.charAt(0).toUpperCase() + slug.slice(1);
   });
 
@@ -45,7 +45,7 @@ export default function (eleventyConfig) {
 
   // category pages data
   eleventyConfig.addCollection("byCategory", (api) => {
-    const cats = ["workflows", "river", "archive"];
+    const cats = ["river", "archive"];
     return cats.map((slug) => ({
       slug,
       posts: api.getFilteredByGlob("src/posts/*.md")
