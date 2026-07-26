@@ -11,7 +11,8 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Krishna" href="/feed/index.xml">
 <link rel="stylesheet" href="/assets/style.css">
-<script>try{var t=localStorage.getItem('kp-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<script>try{var t=localStorage.getItem('kp-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);
+var z=localStorage.getItem('kp-size');if(z==='small'||z==='large')document.documentElement.setAttribute('data-size',z);}catch(e){}</script>
 </head>
 <body>
   <header class="top">
@@ -40,9 +41,16 @@
 {{ content | safe }}
         <footer class="site">&copy; Krishna &middot; krishnapermi.net
           <div class="modes">
+            <span class="lbl">Theme</span>
             <button data-mode="auto">Auto</button>
             <button data-mode="light">Light</button>
             <button data-mode="dark">Dark</button>
+          </div>
+          <div class="modes sizes">
+            <span class="lbl">Text</span>
+            <button data-size="small">Small</button>
+            <button data-size="normal">Normal</button>
+            <button data-size="large">Large</button>
           </div>
         </footer>
       </div>
@@ -54,18 +62,36 @@
   function apply(m){
     if(m==='light'||m==='dark'){document.documentElement.setAttribute('data-theme',m);}
     else{document.documentElement.removeAttribute('data-theme'); m='auto';}
-    document.querySelectorAll('.modes button').forEach(function(b){
+    document.querySelectorAll('.modes button[data-mode]').forEach(function(b){
       b.classList.toggle('on', b.getAttribute('data-mode')===m);
     });
   }
   var saved='auto';
   try{saved=localStorage.getItem(KEY)||'auto';}catch(e){}
   apply(saved);
-  document.querySelectorAll('.modes button').forEach(function(b){
+  document.querySelectorAll('.modes button[data-mode]').forEach(function(b){
     b.addEventListener('click',function(){
       var m=b.getAttribute('data-mode');
       try{localStorage.setItem(KEY,m);}catch(e){}
       apply(m);
+    });
+  });
+  var SKEY='kp-size';
+  function applySize(z){
+    if(z==='small'||z==='large'){document.documentElement.setAttribute('data-size',z);}
+    else{document.documentElement.removeAttribute('data-size'); z='normal';}
+    document.querySelectorAll('.sizes button').forEach(function(b){
+      b.classList.toggle('on', b.getAttribute('data-size')===z);
+    });
+  }
+  var zsaved='normal';
+  try{zsaved=localStorage.getItem(SKEY)||'normal';}catch(e){}
+  applySize(zsaved);
+  document.querySelectorAll('.sizes button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var z=b.getAttribute('data-size');
+      try{localStorage.setItem(SKEY,z);}catch(e){}
+      applySize(z);
     });
   });
 })();
