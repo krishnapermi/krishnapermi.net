@@ -1,7 +1,7 @@
 ---
 title: "Tot 2.0: My plain text companion gets even better"
 date: 2025-08-26T06:50:44+05:30
-categories: [apps]
+categories: [archive]
 ---
 
 <p>I love <a href="https://tot.rocks/">Tot</a>. I love how it treats plain text as a first-class citizen, and I use it constantly alongside Apple&#8217;s Notes app. The sync is rock solid, and it&#8217;s like a Swiss Army knife for quick text capture.</p>

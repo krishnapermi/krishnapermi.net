@@ -1,7 +1,7 @@
 ---
 title: "Latest: The app update manager macOS has been missing"
 date: 2025-09-02T15:16:51+05:30
-categories: [apps]
+categories: [archive]
 ---
 
 <div class="wp-block-image">

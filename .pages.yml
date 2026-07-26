@@ -31,8 +31,6 @@ content:
         options:
           multiple: true
           values:
-            - value: apps
-              label: Apps
             - value: workflows
               label: Workflows
             - value: river
