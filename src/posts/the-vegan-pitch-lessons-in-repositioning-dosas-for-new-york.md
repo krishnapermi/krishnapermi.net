@@ -1,5 +1,5 @@
 ---
-title: "The Vegan Pitch: Lessons in Repositioning Dosas for New York"
+title: "The vegan pitch: lessons in repositioning dosas for New York"
 date: 2025-04-17T14:16:11+05:30
 categories: [archive]
 ---
