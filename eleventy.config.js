@@ -1,4 +1,5 @@
 export default function (eleventyConfig) {
+  eleventyConfig.addGlobalData("buildTime", () => Date.now());
   // static assets copied as-is
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/wp-content": "wp-content" });
