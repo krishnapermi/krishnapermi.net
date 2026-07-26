@@ -1,6 +1,7 @@
 ---
 title: "Latest: The app update manager macOS has been missing"
 date: 2025-09-02T15:16:51+05:30
+description: "Latest is the free, open source update manager macOS has been missing."
 categories: [archive]
 ---
 

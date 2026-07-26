@@ -1,6 +1,7 @@
 ---
 title: "Save URLs from Google Chrome to Apple Notes on Mac with Automator and a simple keyboard shortcut"
 date: 2025-08-19T16:43:52+05:30
+description: "An Automator workflow to save Chrome URLs into Apple Notes with a single keyboard shortcut."
 categories: [archive]
 ---
 

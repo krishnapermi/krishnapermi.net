@@ -1,6 +1,8 @@
 ---
 title: "The ancient fire and the story of storytelling"
 date: 2025-05-16T12:38:19+05:30
+description: "S.S. Rajamouli on the fire-starers, and why storytelling is a life-saving job."
+image: /wp-content/uploads/linkedin/fire-cover.png
 categories: [archive]
 ---
 

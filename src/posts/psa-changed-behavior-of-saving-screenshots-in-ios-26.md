@@ -1,6 +1,7 @@
 ---
 title: "PSA: Changed behavior of saving screenshots in iOS 26"
 date: 2025-09-16T21:28:16+05:30
+description: "iOS 26 changes how screenshots are saved - closing the preview deletes them without confirmation."
 categories: [archive]
 ---
 

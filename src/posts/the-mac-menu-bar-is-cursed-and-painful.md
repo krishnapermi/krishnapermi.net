@@ -1,6 +1,7 @@
 ---
 title: "The Mac menu bar is cursed and painful"
 date: 2026-01-24T21:39:52+05:30
+description: "Why the macOS menu bar remains the most frustrating part of an otherwise polished system."
 categories: [archive]
 ---
 

@@ -99,6 +99,14 @@ ul.index .t a:hover{text-decoration-color:var(--ink)}
 ul.index time{font-family:Franklin,-apple-system,Helvetica,sans-serif; font-size:.72rem; color:var(--soft); white-space:nowrap}
 
 /* footer inside content col */
+.postnav{display:flex; justify-content:space-between; gap:2rem; margin-top:3rem; padding-top:1.5rem;
+  border-top:1px solid var(--rule); font-size:.92rem}
+.postnav .next{text-align:right; margin-left:auto}
+.postnav .lbl{display:block; font-family:Franklin,-apple-system,Helvetica,sans-serif; font-size:.68rem;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--soft); margin-bottom:.25rem}
+.postnav a{color:var(--ink); text-decoration:underline; text-decoration-color:var(--soft); text-underline-offset:3px}
+.postnav a:hover{text-decoration-color:var(--ink)}
+
 footer.site{margin:3rem 0 0; border-top:1px solid var(--rule); padding:1.4rem 0 2.4rem;
   font-family:Franklin,-apple-system,Helvetica,sans-serif; font-size:.72rem; color:var(--soft)}
 footer.site .links{display:flex; gap:1.3rem; flex-wrap:wrap; margin-bottom:.7rem;

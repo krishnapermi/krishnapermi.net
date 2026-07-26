@@ -1,6 +1,8 @@
 ---
 title: "Apple Hebbal"
 date: 2025-09-02T16:21:50+05:30
+description: "Notes on Apple's first store in South India, and why 'Hebbal' is a curious choice."
+image: /wp-content/uploads/2025/09/image-1-768x772.png
 categories: [river]
 ---
 

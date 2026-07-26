@@ -38,6 +38,14 @@ content:
       - name: body
         label: Post
         type: rich-text
+  - name: about
+    label: About page
+    type: file
+    path: src/about.njk
+    fields:
+      - name: body
+        label: Content
+        type: text
   - name: akshar
     label: Akshar page
     type: file
@@ -45,4 +53,4 @@ content:
     fields:
       - name: body
         label: Content
-        type: text
+        type: code

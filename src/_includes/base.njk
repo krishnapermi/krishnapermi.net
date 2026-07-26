@@ -10,6 +10,13 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Krishna" href="/feed/index.xml">
+<meta property="og:site_name" content="Krishna">
+<meta property="og:title" content="{% if page.url == '/' %}Krishna{% else %}{{ pageTitle or title }}{% endif %}">
+<meta property="og:description" content="{{ description or title or 'Krishna' }}">
+<meta property="og:url" content="https://krishnapermi.net{{ page.url }}">
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:image" content="https://krishnapermi.net{{ image or '/assets/logo.png' }}">
+<meta name="twitter:card" content="{% if image %}summary_large_image{% else %}summary{% endif %}">
 <link rel="stylesheet" href="/assets/style.css?v={{ buildTime }}">
 <script>try{var t=localStorage.getItem('kp-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);
 var z=localStorage.getItem('kp-size');if(z==='small'||z==='large')document.documentElement.setAttribute('data-size',z);}catch(e){}</script>
@@ -23,6 +30,7 @@ var z=localStorage.getItem('kp-size');if(z==='small'||z==='large')document.docum
       <a href="/"{% if page.url == '/' %} class="here"{% endif %}>Home</a>
       <a href="/category/river/"{% if page.url == '/category/river/' %} class="here"{% endif %}>River</a>
       <a href="/category/archive/"{% if page.url == '/category/archive/' %} class="here"{% endif %}>Archive</a>
+      <a href="/about/"{% if page.url == '/about/' %} class="here"{% endif %}>About</a>
     </nav>
   </header>
   </div>

@@ -1,6 +1,7 @@
 export default {
   layout: "post.njk",
   tags: ["post"],
+  ogType: "article",
   eleventyComputed: {
     permalink: (data) => {
       if (data.permalink) return data.permalink;

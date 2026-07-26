@@ -1,6 +1,8 @@
 ---
 title: "The vegan pitch: lessons in repositioning dosas for New York"
 date: 2025-04-17T14:16:11+05:30
+description: "How NYC's Dosa Man repositioned an everyday Indian dish for a new audience."
+image: /wp-content/uploads/linkedin/dosa-cover.jpg
 categories: [archive]
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Tot 2.0: My plain text companion gets even better"
 date: 2025-08-26T06:50:44+05:30
+description: "Tot 2.0 makes my favourite plain-text scratchpad even better."
 categories: [archive]
 ---
 

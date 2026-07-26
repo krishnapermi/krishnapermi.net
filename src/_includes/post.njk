@@ -6,3 +6,9 @@ layout: base.njk
   <p class="byline"><a href="{{ page.url }}"><time datetime="{{ date | isoDate }}">{{ date | niceDate }}</time></a>{% for c in categories %} &middot; <a href="/category/{{ c }}/">{{ c | catName }}</a>{% endfor %}</p>
   <div class="content endmark">{{ content | safe }}</div>
 </article>
+{% set prevPost = collections.post | getPreviousCollectionItem %}
+{% set nextPost = collections.post | getNextCollectionItem %}
+{% if prevPost or nextPost %}<nav class="postnav">
+  <div>{% if prevPost %}<span class="lbl">Older</span><a href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>{% endif %}</div>
+  <div class="next">{% if nextPost %}<span class="lbl">Newer</span><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}</div>
+</nav>{% endif %}

@@ -1,6 +1,8 @@
 ---
 title: "Wonderful world"
 date: 2024-12-06T13:24:37+05:30
+description: "A wonderful world, in three donuts."
+image: /wp-content/uploads/2024/12/IMG_6148-2-scaled.jpg
 categories: [archive]
 ---
 
