@@ -49,4 +49,4 @@ content:
     fields:
       - name: body
         label: Content
-        type: code
+        type: text
