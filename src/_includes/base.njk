@@ -15,29 +15,27 @@
 var z=localStorage.getItem('kp-size');if(z==='small'||z==='large')document.documentElement.setAttribute('data-size',z);}catch(e){}</script>
 </head>
 <body>
+  <div class="topwrap">
   <header class="top">
     <a href="/"><img class="avatar" src="/assets/logo.png" alt=""></a>
     <h1><a href="/">Krishna</a></h1>
-  </header>
-  <div class="layout">
-    <aside class="rail">
-      <div class="rail-inner">
-        <nav class="site">
+    <nav class="site">
       <a href="/"{% if page.url == '/' %} class="here"{% endif %}>Home</a>
       <a href="/category/river/"{% if page.url == '/category/river/' %} class="here"{% endif %}>River</a>
       <a href="/category/archive/"{% if page.url == '/category/archive/' %} class="here"{% endif %}>Archive</a>
-        </nav>
-        <div class="extras">
-          <a href="/akshar-indic-keyboard/">Akshar: Indic Keyboard</a>
-          <a href="https://mastodon.social/@krishna">Mastodon</a>
-          <a href="/feed/index.xml">RSS</a>
-        </div>
-      </div>
-    </aside>
+    </nav>
+  </header>
+  </div>
     <main>
       <div class="wrap">
 {{ content | safe }}
-        <footer class="site">&copy; Krishna &middot; krishnapermi.net
+        <footer class="site">
+          <div class="links">
+            <a href="/akshar-indic-keyboard/">Akshar: Indic Keyboard</a>
+            <a href="https://mastodon.social/@krishna">Mastodon</a>
+            <a href="/feed/index.xml">RSS</a>
+          </div>
+          &copy; Krishna &middot; krishnapermi.net
           <div class="modes">
             <span class="lbl">Theme</span>
             <button data-mode="auto">Auto</button>
@@ -53,7 +51,6 @@ var z=localStorage.getItem('kp-size');if(z==='small'||z==='large')document.docum
         </footer>
       </div>
     </main>
-  </div>
 <script>
 (function(){
   var KEY='kp-theme';
