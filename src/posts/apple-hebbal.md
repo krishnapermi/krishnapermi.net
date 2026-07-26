@@ -46,7 +46,7 @@ categories: [river]
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1018" height="1024" src="/wp-content/uploads/2025/09/image-1-768x772.png" alt="" class="wp-image-104" srcset="/wp-content/uploads/2025/09/image-1-768x772.png 1018w, /wp-content/uploads/2025/09/image-1-298x300.png 298w, /wp-content/uploads/2025/09/image-1-150x150.png 150w, /wp-content/uploads/2025/09/image-1-768x772.png 768w, /wp-content/uploads/2025/09/image-1-100x100.png 100w, /wp-content/uploads/2025/09/image-1.png 1072w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" width="1018" height="1024" src="/wp-content/uploads/2025/09/image-1-768x772.png" alt="" class="wp-image-104" /></figure>
 
 
 

@@ -39,7 +39,7 @@ a:hover{text-decoration-color:var(--ink)}
 
 /* masthead row */
 .top{max-width:1040px; margin:0 auto; padding:2.6rem 1.5rem 1.4rem; display:flex; align-items:center; gap:.9rem}
-.top .avatar{width:48px;height:48px;border-radius:12px;object-fit:cover;display:block}
+.top .avatar{width:48px;height:48px;object-fit:cover;display:block}
 .top h1{margin:0; font-size:1.6rem; font-weight:800; letter-spacing:.02em; line-height:1}
 .top h1 a{color:var(--ink); text-decoration:none}
 
@@ -53,8 +53,8 @@ nav.site a{color:var(--soft); text-decoration:underline; text-decoration-color:v
 nav.site a.here{color:var(--ink); text-decoration-color:var(--ink)}
 nav.site a:hover{color:var(--ink); text-decoration-color:var(--ink)}
 .rail .extras{margin-top:2.4rem;
-  display:flex; flex-direction:column; gap:.55rem; align-items:flex-start;
-  font-family:Franklin,-apple-system,Helvetica,sans-serif; font-size:.72rem}
+  display:flex; flex-direction:column; gap:.5rem; align-items:flex-start;
+  font-family:Georgia,serif; font-size:.9rem}
 .rail .extras a{color:var(--soft); text-decoration:underline; text-decoration-color:var(--rule); text-underline-offset:3px}
 .rail .extras a:hover{color:var(--ink); text-decoration-color:var(--ink)}
 
