@@ -65,8 +65,8 @@ main{padding:3.4rem 0 2.5rem}
 .kicker a:hover{color:var(--ink); text-decoration-color:var(--ink)}
 h2.post-title,h1.post-title{font-weight:700; font-size:1.65rem; line-height:1.2; margin:0 0 .7rem; letter-spacing:0}
 h1.post-title{font-size:1.95rem}
-h2.post-title a{color:var(--ink); text-decoration:none}
-h2.post-title a:hover{text-decoration:underline; text-decoration-color:var(--soft); text-underline-offset:4px}
+h2.post-title a{color:var(--ink); text-decoration:underline; text-decoration-color:var(--soft); text-decoration-thickness:1px; text-underline-offset:4px}
+h2.post-title a:hover{text-decoration-color:var(--ink)}
 .byline{font-family:Franklin,-apple-system,Helvetica,sans-serif; font-size:.74rem; color:var(--soft); margin:0 0 .9rem}
 .byline a{color:var(--soft); text-decoration:underline; text-decoration-color:var(--rule); text-underline-offset:3px}
 .byline a:hover{color:var(--ink); text-decoration-color:var(--ink)}
@@ -96,8 +96,8 @@ ul.index{list-style:none; margin:0; padding:0}
 ul.index li{display:flex; justify-content:space-between; align-items:baseline; gap:1rem;
   padding:.85rem 0; border-bottom:1px solid var(--rule)}
 ul.index .t{font-weight:700; font-size:1.02rem}
-ul.index .t a{color:var(--ink); text-decoration:none}
-ul.index .t a:hover{text-decoration:underline; text-decoration-color:var(--soft); text-underline-offset:3px}
+ul.index .t a{color:var(--ink); text-decoration:underline; text-decoration-color:var(--soft); text-underline-offset:3px}
+ul.index .t a:hover{text-decoration-color:var(--ink)}
 ul.index time{font-family:Franklin,-apple-system,Helvetica,sans-serif; font-size:.72rem; color:var(--soft); white-space:nowrap}
 
 /* footer inside content col */
