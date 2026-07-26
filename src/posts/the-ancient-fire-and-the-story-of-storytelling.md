@@ -4,6 +4,8 @@ date: 2025-05-16T12:38:19+05:30
 categories: [archive]
 ---
 
+<figure><img src="/wp-content/uploads/linkedin/fire-cover.png" alt=""></figure>
+
 <p>The other day, I stumbled across an old video (1 January 2018) of S.S. Rajamouli &mdash; the brilliant filmmaker behind Baahubali and RRR &mdash; speaking from the heart about storytelling. And something he said stayed with me since, and I think it&rsquo;s profound.</p>
 
 <p>Here&rsquo;s what he said:</p>
@@ -22,4 +24,6 @@ categories: [archive]
 
 <p>So when Rajamouli says, &ldquo;You decide whether it&rsquo;s a life-saving job or not,&rdquo; I know the answer. Yes, absolutely.</p>
 
-<p><em>Source: The Directors Roundtable 2017 with Rajeev Masand, CNBC TV18. Originally published on <a href="https://www.linkedin.com/pulse/ancient-fire-story-storytelling-krishna-permi-u6hkc/">LinkedIn</a>.</em></p>
+<figure><a href="https://www.youtube.com/watch?v=leioA6IjbJo"><img src="/wp-content/uploads/linkedin/fire-video.jpg" alt="S.S. Rajamouli at The Directors Roundtable 2017"></a><figcaption>Video credits: CNBC-TV18</figcaption></figure>
+
+<p><em>Source: <a href="https://www.youtube.com/watch?v=leioA6IjbJo">The Directors Roundtable 2017 with Rajeev Masand, CNBC TV18</a>.</em></p>
